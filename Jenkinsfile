@@ -1,6 +1,6 @@
 pipeline {
 
-  agent { label 'masternode' }
+  agent any
 
   stages {
 
