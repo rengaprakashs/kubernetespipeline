@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: web
+  name: sample
+spec:
+  ports:
+  - nodePort: 32228
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: sample
+  type: NodePort
