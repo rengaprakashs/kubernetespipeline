@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - image: sample
-        name: nginx
+        name: srprakash/sample
