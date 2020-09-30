@@ -1,6 +1,6 @@
 pipeline {
 
-  agent { label 'knode1' }
+  agent { label 'knode' }
 
   stages {
 
