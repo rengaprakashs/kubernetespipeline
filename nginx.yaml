@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   labels:
     app: web
-  name: mynginx1
+  name: mynginx2
 spec:
   replicas: 4
   selector:
@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - image: nginx
-        name: mynginx1
+        name: mynginx2
