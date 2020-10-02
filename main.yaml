@@ -1,9 +1,11 @@
----
-- name: Create pods using deployment 
+--- 
+- 
   hosts: all
-  #become: true
-  user: renga5
- 
+  name: "Create pods using deployment"
   tasks: 
-  - name: create a deployment
-    command: "sudo kubectl create -f /home/renga5/workspace/task/nginx.yaml"
+    - 
+      community.kubernetes.k8s: 
+        src: nginx.yaml
+        state: present
+      name: "create a deployment"
+  user: renga5
