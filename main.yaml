@@ -5,4 +5,4 @@
  
   tasks: 
   - name: create a deployment
-    command: sudo kubectl apply -f $workspace/nginx.yaml
+    command: sudo kubectl
