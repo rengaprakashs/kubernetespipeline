@@ -1,7 +1,8 @@
 ---
 - name: Create pods using deployment 
   hosts: all
-  become: true
+  #become: true
+  user: renga5
  
   tasks: 
   - name: create a deployment
