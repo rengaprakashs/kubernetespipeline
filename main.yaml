@@ -4,4 +4,4 @@
   become: true
   tasks: 
   - name: create a deployment
-    command: sudo kubectl create -f
+    command: sudo kubectl create -f sample.yaml
