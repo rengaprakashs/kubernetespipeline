@@ -4,4 +4,4 @@
   become: true
   tasks: 
   - name: create a deployment
-    command: sudo kubectl run renga --image nginx
+    command: sudo kubectl create -f
