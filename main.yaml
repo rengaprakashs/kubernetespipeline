@@ -1,4 +1,4 @@
---
+---
 - name: Create pods using deployment 
   hosts: kubernetes 
   become: true
