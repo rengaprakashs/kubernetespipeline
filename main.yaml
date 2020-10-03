@@ -3,5 +3,7 @@
   hosts: all
   become: true
   tasks: 
-  - name: create a deployment
+  - name: copy files
     copy: src=/home/renga5/workspace/task/nginx.yaml dest=/home/renga5/
+  - name: command
+    command: sudo kubectl create -f /home/renga5/nginx.yaml
