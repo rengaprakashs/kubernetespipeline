@@ -4,4 +4,4 @@
   become: true
   tasks: 
   - name: copy files
-    copy: src=/home/renga5/workspace/task/ dest=/home/
+    copy: src=/home/renga5/workspace/task/ dest=/home/docker/
