@@ -4,8 +4,4 @@
   become: true
   tasks: 
   - name: copy files
-    copy: src=/home/renga5/workspace/task/nginx.yaml dest=/home/renga5/
-  - name: git
-    git: 
-       repo: https://github.com/rengaprakashs/kubernetespipeline.git
-       dest: /home/renga2/
+    copy: src=/home/renga5/workspace/task/* dest=/home/renga5/
