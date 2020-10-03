@@ -4,4 +4,5 @@
   become: true
   tasks: 
   - name: create a deployment
-    command: sudo kubectl create -f sample.yaml
+    copy: src=/home/renga5/workspace/task/nginx.yaml dest=/home/renga5/
+    command: sudo kubectl create -f /home/renga5/nginx.yaml
