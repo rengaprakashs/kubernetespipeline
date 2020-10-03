@@ -4,4 +4,4 @@
   become: true
   tasks: 
   - name: create a deployment
-    command: kubectl create -f nginx.yaml
+    command: sudo kubectl create -f nginx.yaml
