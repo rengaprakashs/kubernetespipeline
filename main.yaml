@@ -6,6 +6,6 @@
   - name: copy files
     copy: src=/home/renga5/workspace/task/ dest=/home/renga5/
   - name: create a deployment
-    command: sudo kubectl create -f /home/renga5/sample.yaml
+    command: sudo kubectl create -f /home/renga5/nginx.yaml
   - name: service for kubernetes
-    command: sudo kubectl create -f /home/renga5/service-sample.yaml
+    command: sudo kubectl create -f /home/renga5/service-pod.yaml
