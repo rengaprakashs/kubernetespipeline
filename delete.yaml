@@ -1,0 +1,11 @@
+---
+- name: Create pods using deployment 
+  hosts: all
+  become: true
+  tasks: 
+  - name: copy files
+    copy: src=/home/renga5/workspace/task/ dest=/home/renga5/
+  - name: create a deployment
+    command: sudo kubectl delete deployment mynginx2
+  - name: service for kubernetes
+    command: sudo kubectl delete svc mynginx1
